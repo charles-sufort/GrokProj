@@ -1,0 +1,21 @@
+{
+	"sshd_disconnected":
+	[
+		{
+			"name" : "invalid user preauth",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from invalid user %{USER:user} %{IP:USER_IP} port %{NUMBER:port} \\[preauth\\]"
+		},
+		{
+			"name" : "authenticating user preauth",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from authenticating user %{USER:user} %{IP:USER_IP} port %{NUMBER:port} \\[preauth\\]"
+		},
+		{
+			"name" : "disconnected authed user",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from user %{USER:user} %{IP:USER_IP} port %{NUMBER:port}"
+		},
+		{
+			"name" : "disconnected ip preauth",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from %{IP:USER_IP} port %{NUMBER:port} \\[preauth\\]"
+		}
+	]
+}

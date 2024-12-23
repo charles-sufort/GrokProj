@@ -1,0 +1,23 @@
+[
+	{
+		"category": "received",
+		"patterns":
+		[
+			{
+				"name": "exact",
+				"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\[%{NUMBER:sshd_number}\]: Received disconnect fro    m %{IP:user_ip} port %{NUMBER:port}:%{NUMBER:port_num}: %{DATA:SSH_PROTOCOL}"
+			}
+		]
+	},
+	{
+		"category": "disconnected",
+		"patterns":
+		[
+			{
+			}
+		]
+
+	}
+
+	}
+]
