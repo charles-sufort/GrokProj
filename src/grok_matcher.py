@@ -14,7 +14,7 @@ class GrokTester:
         options.add_argument("start-maximized")
         options.add_experimental_option("excludeSwitches",["enable-automation"])
         options.add_experimental_option('useAutomationExtension',False)
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Firefox()
         self.grok_manager = GrokManager()
         self.logfile = logfile
         self.ctg = ctg
@@ -45,7 +45,9 @@ class GrokTester:
             pattern.send_keys(self.pattern_str)
             submit = self.driver.find_element(By.ID,"submit")
             submit.submit()
+            input()
             success_elems = self.driver.find_elements(By.CLASS_NAME,"success")
+            print(success_elems)
             error_elems = self.driver.find_elements(By.CLASS_NAME,"ym-fbox-text ym-error")
             print(error_elems)
             print("logs: {}".format(len(self.logs)))
