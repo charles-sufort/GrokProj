@@ -1,0 +1,40 @@
+{
+	"keyword_re":
+	[
+		"sshd\\[[0-9]*\\]:[ ]*Failed password",
+		"sshd\\[[0-9]*\\]:[ ]*Connection closed",
+		"sshd\\[[0-9]*\\]:[ ]*Received disconnect",
+		"sshd\\[[0-9]*\\]:[ ]*Connection reset",
+		"sshd\\[[0-9]*\\]:[ ]*Failed none",
+		"sshd\\[[0-9]*\\]:[ ]*error",
+		"sshd\\[[0-9]*\\]:[ ]*banner exchange",
+		"sshd\\[[0-9]*\\]:[ ]*Invalid user",
+		"sshd\\[[0-9]*\\]:[ ]*Received signal",
+		"sshd\\[[0-9]*\\]:[ ]*Disconnected from",
+		"sshd\\[[0-9]*\\]:[ ]*pam_unix",
+		"sshd\\[[0-9]*\\]:[ ]*Accepted publickey",
+		"sshd\\[[0-9]*\\]:[ ]*Server listening",
+		"sshd\\[[0-9]*\\]:[ ]*Unable to",
+		"sshd\\[[0-9]*\\]:[ ]*fatal",
+		"sshd\\[[0-9]*\\]:[ ]*Accepted password",
+		"sshd\\[[0-9]*\\]:[ ]*Disconnecting",
+		"sshd\\[[0-9]*\\]:[ ]*PAM",
+		"sshd\\[[0-9]*\\]:[ ]*ssh_dispatch",
+		"sshd\\[[0-9]*\\]:[ ]*drop",
+		"sshd\\[[0-9]*\\]:[ ]*exited",
+		"sshd\\[[0-9]*\\]:[ ]*refusing RSA",
+		"sshd\\[[0-9]*\\]:[ ]*Corrupted",
+		"sudo\\[[0-9]*\\]:[ ]*",
+		"passwd\\[[0-9]*\\]:[ ]*",
+		"userdel\\[[0-9]*\\]:[ ]*",
+		"su\\[[0-9]*\\]:[ ]*",
+		"polkitd\\[[0-9]*\\]:[ ]*",
+		"systemd\\[[0-9]*\\]:[ ]*pam_unix",
+		"groupadd\\[[0-9]*\\]:[ ]*group",
+		"useradd\\[[0-9]*\\]:[ ]*",
+		"groupadd\\[[0-9]*\\]:[ ]*new group",
+		"unix_chkpwd\\[[0-9]*\\]:[ ]* password check"
+
+	]
+}
+
