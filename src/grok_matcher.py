@@ -5,6 +5,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from grok_manager import GrokManager
 
 
@@ -15,6 +17,7 @@ class GrokTester:
         options.add_experimental_option("excludeSwitches",["enable-automation"])
         options.add_experimental_option('useAutomationExtension',False)
         self.driver = webdriver.Firefox()
+
         self.grok_manager = GrokManager()
         self.logfile = logfile
         self.ctg = ctg
@@ -33,9 +36,12 @@ class GrokTester:
         print(self.pattern_str)
 
     def test_files(self):
-        d = int(len(self.logs) / 100)
-        inds = [i*100 for i in range(d+1)] + [len(self.logs)]
+        l_int = 200
+        d = int(len(self.logs) / l_int)
+        inds = [i*l_int for i in range(d+1)] + [len(self.logs)]
         print(inds)
+        matched = []
+        not_matched = []
         for i in range(d+1):
             self.driver.get("http://grokconstructor.appspot.com/do/match")
             log_str = "\n".join(self.logs[inds[i]:inds[i+1]])
@@ -43,18 +49,32 @@ class GrokTester:
             loglines.send_keys(log_str)
             pattern = self.driver.find_element(By.ID,"pattern")
             pattern.send_keys(self.pattern_str)
+            WebDriverWait(self.driver,5)
             submit = self.driver.find_element(By.ID,"submit")
+
             submit.submit()
-            input()
+            WebDriverWait(self.driver,10).until(EC.visibility_of_element_located((By.TAG_NAME,"table")))
+
+            table = self.driver.find_element(By.TAG_NAME,"table")
+            rows = table.find_elements(By.TAG_NAME,"tr")
+            prev = None
+            str1 = "MATCHED"
+            str2 = "NOT MATCHED"
+            for row in rows:
+                row_text = row.text
+                if row_text == "MATCHED":
+                    matched.append(prev.text)
+                elif row_text[:len(str2)] == str2:
+                    not_matched.append(prev.text)
+                prev = row
             success_elems = self.driver.find_elements(By.CLASS_NAME,"success")
-            print(success_elems)
             error_elems = self.driver.find_elements(By.CLASS_NAME,"ym-fbox-text ym-error")
-            print(error_elems)
             print("logs: {}".format(len(self.logs)))
             print("patterns: {}".format(len(self.patterns)))
-            print("successes: {}".format(len(success_elems)))
-            print("fails: {}".format(len(error_elems)))
-            input()
+            print("successes: {}".format(len(matched)))
+            print("fails: {}".format(len(not_matched)))
+            print(not_matched)
+            
 
 
 
@@ -62,13 +82,9 @@ class GrokTester:
 
 
 
+GT = GrokTester("fail2ban","fail2ban")
 
-
-
-
-
-
-GT = GrokTester("secure","sshd_disconnected")
+print(GT.pattern_str)
 GT.test_files()
 
 input()

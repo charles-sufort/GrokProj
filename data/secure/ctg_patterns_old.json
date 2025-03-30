@@ -1,0 +1,51 @@
+{
+    "sshd_failed_password": [],
+    "sshd_connection_closed": [],
+    "sshd_received_disconnect": [],
+    "sshd_connection_reset": [],
+    "sshd_failed_none": [],
+    "sshd_error": [],
+    "sshd_banner_exchange": [],
+    "sshd_invalid_user": [],
+    "sshd_received_signal": [],
+    "sshd_disconnected_from": [
+		{
+			"name" : "invalid user preauth",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from invalid user %{USER:user} %{IP:USER_IP} port %{NUMBER:port} \\[preauth\\]"
+		},
+		{
+			"name" : "authenticating user preauth",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from authenticating user %{USER:user} %{IP:USER_IP} port %{NUMBER:port} \\[preauth\\]"
+		},
+		{
+			"name" : "disconnected authed user",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from user %{USER:user} %{IP:USER_IP} port %{NUMBER:port}"
+		},
+		{
+			"name" : "disconnected ip preauth",
+			"pattern": "%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} sshd\\[%{NUMBER:sshd_number}\\]: Disconnected from %{IP:USER_IP} port %{NUMBER:port} \\[preauth\\]"
+		}
+	],
+    "sshd_pam_unix": [],
+    "ssd_accepted_publickey": [],
+    "sshd_server_listening": [],
+    "sshd_unable_to": [],
+    "sshd_fatal": [],
+    "sshd_accepted_password": [],
+    "ssd_disconnecting": [],
+    "ssd_pam": [],
+    "ssd_ssh_dispatch": [],
+    "sshd_drop": [],
+    "sshd_exited": [],
+    "sshd_refusing_RSA": [],
+    "sshd_Corrupted": [],
+    "sudo": [],
+    "passwd": [],
+    "userdel": [],
+    "su": [],
+    "polkitd": [],
+    "systemd": [],
+    "groupadd": [],
+    "useradd": [],
+    "unix_chkpwd": []
+}

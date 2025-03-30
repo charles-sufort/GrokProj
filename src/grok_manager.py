@@ -6,7 +6,7 @@ class GrokManager:
         self.data_dir = "../data"
 
     def get_logs(self,logfile,ctg):
-        file = "{}/{}/{}.log".format(self.data_dir,logfile,ctg)
+        file = "{}/{}/log_ctgs/{}.log".format(self.data_dir,logfile,ctg)
         logs = []
         with open(file,"r") as fo:
             for line in fo:
@@ -16,7 +16,7 @@ class GrokManager:
     def get_patterns(self,logfile,ctg):
 
         patterns = []
-        file = "{}/{}/{}_patterns.json".format(self.data_dir,logfile,logfile)
+        file = "{}/{}/ctg_patterns.json".format(self.data_dir,logfile,logfile)
         with open(file,"r") as fo:
             ctg_obj = json.load(fo)
         for pattern_obj in ctg_obj[ctg]:
@@ -27,5 +27,5 @@ class GrokManager:
 
 if __name__ == "__main__":
     gm = GrokManager()
-    print(gm.get_logs("secure","sshd_disconnected"))
-    print(gm.get_patterns("secure","sshd_disconnected"))
+    print(gm.get_logs("secure","sshd_disconnected_from"))
+    print(gm.get_patterns("secure","sshd_disconnected_from"))

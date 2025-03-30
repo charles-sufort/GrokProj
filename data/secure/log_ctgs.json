@@ -1,39 +1,134 @@
 {
 	"keyword_re":
 	[
-		"sshd\\[[0-9]*\\]:[ ]*Failed password",
-		"sshd\\[[0-9]*\\]:[ ]*Connection closed",
-		"sshd\\[[0-9]*\\]:[ ]*Received disconnect",
-		"sshd\\[[0-9]*\\]:[ ]*Connection reset",
-		"sshd\\[[0-9]*\\]:[ ]*Failed none",
-		"sshd\\[[0-9]*\\]:[ ]*error",
-		"sshd\\[[0-9]*\\]:[ ]*banner exchange",
-		"sshd\\[[0-9]*\\]:[ ]*Invalid user",
-		"sshd\\[[0-9]*\\]:[ ]*Received signal",
-		"sshd\\[[0-9]*\\]:[ ]*Disconnected from",
-		"sshd\\[[0-9]*\\]:[ ]*pam_unix",
-		"sshd\\[[0-9]*\\]:[ ]*Accepted publickey",
-		"sshd\\[[0-9]*\\]:[ ]*Server listening",
-		"sshd\\[[0-9]*\\]:[ ]*Unable to",
-		"sshd\\[[0-9]*\\]:[ ]*fatal",
-		"sshd\\[[0-9]*\\]:[ ]*Accepted password",
-		"sshd\\[[0-9]*\\]:[ ]*Disconnecting",
-		"sshd\\[[0-9]*\\]:[ ]*PAM",
-		"sshd\\[[0-9]*\\]:[ ]*ssh_dispatch",
-		"sshd\\[[0-9]*\\]:[ ]*drop",
-		"sshd\\[[0-9]*\\]:[ ]*exited",
-		"sshd\\[[0-9]*\\]:[ ]*refusing RSA",
-		"sshd\\[[0-9]*\\]:[ ]*Corrupted",
-		"sudo\\[[0-9]*\\]:[ ]*",
-		"passwd\\[[0-9]*\\]:[ ]*",
-		"userdel\\[[0-9]*\\]:[ ]*",
-		"su\\[[0-9]*\\]:[ ]*",
-		"polkitd\\[[0-9]*\\]:[ ]*",
-		"systemd\\[[0-9]*\\]:[ ]*pam_unix",
-		"groupadd\\[[0-9]*\\]:[ ]*group",
-		"useradd\\[[0-9]*\\]:[ ]*",
-		"groupadd\\[[0-9]*\\]:[ ]*new group",
-		"unix_chkpwd\\[[0-9]*\\]:[ ]* password check"
+			{
+		"name":"sshd_failed_password",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Failed password"
+	},
+			{
+		"name":"sshd_connection_closed",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Connection closed"
+	},
+			{
+		"name":"sshd_received_disconnect",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Received disconnect"
+	},
+			{
+		"name":"sshd_connection_reset",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Connection reset"
+	},
+			{
+		"name":"sshd_failed_none",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Failed none"
+	},
+			{
+		"name":"sshd_error",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*error"
+	},
+			{
+		"name":"sshd_banner_exchange",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*banner exchange"
+	},
+			{
+		"name":"sshd_invalid_user",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Invalid user"
+	},
+			{
+		"name":"sshd_received_signal",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Received signal"
+	},
+			{
+		"name":"sshd_disconnected_from",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Disconnected from"
+	},
+			{
+		"name":"sshd_pam_unix",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*pam_unix"
+	},
+			{
+		"name":"sshd_accepted_publickey",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Accepted publickey"
+	},
+			{
+		"name":"sshd_server_listening",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Server listening"
+	},
+			{
+		"name":"sshd_unable_to",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Unable to"
+	},
+			{
+		"name":"sshd_fatal",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*fatal"
+	},
+			{
+		"name":"sshd_accepted_password",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Accepted password"
+	},
+			{
+		"name":"sshd_disconnecting",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Disconnecting"
+	},
+			{
+		"name":"sshd_pam",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*PAM"
+	},
+			{
+		"name":"sshd_ssh_dispatch",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*ssh_dispatch"
+	},
+			{
+		"name":"sshd_drop",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*drop"
+	},
+			{
+		"name":"sshd_exited",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*exited"
+	},
+			{
+		"name":"sshd_refusing_RSA",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*refusing RSA"
+	},
+			{
+		"name":"sshd_Corrupted",
+		"pattern":"sshd\\[[0-9]*\\]:[ ]*Corrupted"
+	},
+			{
+		"name":"sudo",
+		"pattern":"sudo\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"passwd",
+		"pattern":"passwd\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"userdel",
+		"pattern":"userdel\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"su",
+		"pattern":"su\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"polkitd",
+		"pattern":"polkitd\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"systemd",
+		"pattern":"systemd\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"groupadd",
+		"pattern":"groupadd\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"useradd",
+		"pattern":"useradd\\[[0-9]*\\]:[ ]*"
+	},
+			{
+		"name":"unix_chkpwd",
+		"pattern":"unix_chkpwd\\[[0-9]*\\]:[ ]*"
+	}
 
 	]
 }
