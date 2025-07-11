@@ -1,0 +1,24 @@
+Dec 20 16:27:36 rabid-industry su[36309]: pam_unix(su:auth): authentication failure; logname=charles uid=1000 euid=0 tty=/dev/pts/2 ruser=charles rhost=  user=root
+Dec 20 16:27:55 rabid-industry su[36314]: pam_unix(su:auth): authentication failure; logname=charles uid=1000 euid=0 tty=/dev/pts/2 ruser=charles rhost=  user=root
+Dec 20 16:28:43 rabid-industry su[36321]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:01:47 rabid-industry su[36321]: pam_unix(su:session): session closed for user root
+Dec 20 18:14:59 rabid-industry su[39627]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:21:06 rabid-industry su[39770]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:31:43 rabid-industry su[39770]: pam_unix(su:session): session closed for user root
+Dec 21 18:41:25 rabid-industry su[39627]: pam_unix(su:session): session closed for user root
+Dec 20 16:27:36 rabid-industry su[36309]: pam_unix(su:auth): authentication failure; logname=charles uid=1000 euid=0 tty=/dev/pts/2 ruser=charles rhost=  user=root
+Dec 20 16:27:55 rabid-industry su[36314]: pam_unix(su:auth): authentication failure; logname=charles uid=1000 euid=0 tty=/dev/pts/2 ruser=charles rhost=  user=root
+Dec 20 16:28:43 rabid-industry su[36321]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:01:47 rabid-industry su[36321]: pam_unix(su:session): session closed for user root
+Dec 20 18:14:59 rabid-industry su[39627]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:21:06 rabid-industry su[39770]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:31:43 rabid-industry su[39770]: pam_unix(su:session): session closed for user root
+Dec 21 18:41:25 rabid-industry su[39627]: pam_unix(su:session): session closed for user root
+Dec 20 16:27:36 rabid-industry su[36309]: pam_unix(su:auth): authentication failure; logname=charles uid=1000 euid=0 tty=/dev/pts/2 ruser=charles rhost=  user=root
+Dec 20 16:27:55 rabid-industry su[36314]: pam_unix(su:auth): authentication failure; logname=charles uid=1000 euid=0 tty=/dev/pts/2 ruser=charles rhost=  user=root
+Dec 20 16:28:43 rabid-industry su[36321]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:01:47 rabid-industry su[36321]: pam_unix(su:session): session closed for user root
+Dec 20 18:14:59 rabid-industry su[39627]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:21:06 rabid-industry su[39770]: pam_unix(su:session): session opened for user root(uid=0) by charles(uid=1000)
+Dec 20 18:31:43 rabid-industry su[39770]: pam_unix(su:session): session closed for user root
+Dec 21 18:41:25 rabid-industry su[39627]: pam_unix(su:session): session closed for user root

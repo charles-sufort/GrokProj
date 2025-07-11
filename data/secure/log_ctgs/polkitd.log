@@ -1,0 +1,12 @@
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Loading rules from directory /etc/polkit-1/rules.d
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Loading rules from directory /usr/share/polkit-1/rules.d
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Finished loading, compiling and executing 4 rules
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Loading rules from directory /etc/polkit-1/rules.d
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Loading rules from directory /usr/share/polkit-1/rules.d
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Finished loading, compiling and executing 4 rules
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Loading rules from directory /etc/polkit-1/rules.d
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Loading rules from directory /usr/share/polkit-1/rules.d
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Finished loading, compiling and executing 4 rules
+Dec 21 19:00:08 rabid-industry polkitd[46979]: Acquired the name org.freedesktop.PolicyKit1 on the system bus

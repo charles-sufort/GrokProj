@@ -1,0 +1,41 @@
+{
+	"fail2ban":[
+		{
+			"name":"FOUND",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: INFO%{SPACE}\\[%{WORD:fail2ban_jail}\\] Found %{IP:client_ip} - %{TIMESTAMP_ISO8601:time2}"
+
+		},
+		{
+			"name":"Unban",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: NOTICE%{SPACE}\\[%{WORD:fail2ban_jail}\\] Unban %{IP:client_ip}"
+
+		},
+		{
+			"name":"Ban",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: NOTICE%{SPACE}\\[%{WORD:fail2ban_jail}\\] Ban %{IP:client_ip}"
+
+		},
+		{
+			"name":"Ban",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: NOTICE%{SPACE}\\[%{WORD:fail2ban_jail}\\] Restore Ban %{IP:client_ip}"
+
+		},
+		{
+			"name":"already banned",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: NOTICE%{SPACE}\\[%{WORD:fail2ban_jail}\\] %{IP:client_ip} already banned"
+
+		},
+		{
+			"name":"rollover",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: INFO%{SPACE}rollover performed on %{URIPATH:log_file}"
+		},
+		{
+			"name":"rollover",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: INFO%{SPACE}%{GREEDYDATA:info_message}"
+		},
+		{
+			"name":"rollover",
+			"pattern": "%{TIMESTAMP_ISO8601:time} fail2ban.%{WORD:fail2ban_action}%{SPACE}\\[%{NUMBER:PID}\\]: NOTICE%{SPACE}%{GREEDYDATA:NOTICE_message}"
+		}
+	]
+}

@@ -7,21 +7,33 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.options import Options
 from grok_manager import GrokManager
 
 
 class GrokTester:
-    def __init__(self,logfile,ctg):
-        options = webdriver.ChromeOptions()
-        options.add_argument("start-maximized")
-        options.add_experimental_option("excludeSwitches",["enable-automation"])
-        options.add_experimental_option('useAutomationExtension',False)
-        self.driver = webdriver.Firefox()
-
+    def __init__(self):
+        options = Options()
+        options.add_argument("--headless")
+        self.driver = webdriver.Firefox(options=options)
         self.grok_manager = GrokManager()
+
+    def test_pattern(self,logfile,ctg):
         self.logfile = logfile
         self.ctg = ctg
         self.load_files()
+        self.test_files()
+
+    def test_ctgs(self,logfile):
+        ctgs = self.grok_manager.get_non_empty_ctgs(logfile)
+        file1 = "test_results"
+        tests = []
+        for ctg in ctgs:
+            test = self.test_pattern(logfile,ctg)
+            tests.append(test)
+        with open(file1,"w") as fo:
+            json.dump(tests,fo)
+
 
     def load_files(self):
         self.logs = self.grok_manager.get_logs(self.logfile,self.ctg)
@@ -53,7 +65,7 @@ class GrokTester:
             submit = self.driver.find_element(By.ID,"submit")
 
             submit.submit()
-            WebDriverWait(self.driver,10).until(EC.visibility_of_element_located((By.TAG_NAME,"table")))
+            WebDriverWait(self.driver,4).until(EC.visibility_of_element_located((By.TAG_NAME,"table")))
 
             table = self.driver.find_element(By.TAG_NAME,"table")
             rows = table.find_elements(By.TAG_NAME,"tr")
@@ -74,18 +86,25 @@ class GrokTester:
             print("successes: {}".format(len(matched)))
             print("fails: {}".format(len(not_matched)))
             print(not_matched)
-            
+        test_results = {}
+        test_results["logs"] = len(self.logs)
+        test_results["patterns"] = len(self.patterns)
+        test_results["successes"] = len(matched)
+        test_results["patterns"] = len(not_matched)
+        test_results["not_matched"] = not_matched
+        test_results["ctg"] = self.ctg
+        test_results["logfile"] = self.logfile
+        return test_results
+          
+
+    
 
 
 
 
+if __name__ == "__main__":
 
 
-
-GT = GrokTester("fail2ban","fail2ban")
-
-print(GT.pattern_str)
-GT.test_files()
-
-input()
+    GT = GrokTester()
+    GT.test_ctgs("secure")
 

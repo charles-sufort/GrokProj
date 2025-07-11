@@ -1,0 +1,153 @@
+Jul  1 01:19:26 almalinux9 groupadd[1263]: group added to /etc/group: name=slocate, GID=21
+Jul  1 01:19:26 almalinux9 groupadd[1263]: group added to /etc/gshadow: name=slocate
+Jul  1 01:19:26 almalinux9 groupadd[1263]: new group: name=slocate, GID=21
+Dec 18 17:57:31 rabid-industry groupadd[814]: group added to /etc/group: name=apache, GID=48
+Dec 18 17:57:31 rabid-industry groupadd[814]: group added to /etc/gshadow: name=apache
+Dec 18 17:57:31 rabid-industry groupadd[814]: new group: name=apache, GID=48
+Dec 19 12:37:42 rabid-industry groupadd[6287]: group added to /etc/group: name=elasticsearch, GID=991
+Dec 19 12:37:42 rabid-industry groupadd[6287]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 12:37:42 rabid-industry groupadd[6287]: new group: name=elasticsearch, GID=991
+Dec 19 12:56:54 rabid-industry groupadd[7078]: group added to /etc/group: name=kibana, GID=990
+Dec 19 12:56:54 rabid-industry groupadd[7078]: group added to /etc/gshadow: name=kibana
+Dec 19 12:56:54 rabid-industry groupadd[7078]: new group: name=kibana, GID=990
+Dec 19 16:02:35 rabid-industry groupadd[8778]: group added to /etc/group: name=logstash, GID=989
+Dec 19 16:02:35 rabid-industry groupadd[8778]: group added to /etc/gshadow: name=logstash
+Dec 19 16:02:35 rabid-industry groupadd[8778]: new group: name=logstash, GID=989
+Dec 19 17:25:24 rabid-industry groupadd[12616]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:25:24 rabid-industry groupadd[12616]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:25:24 rabid-industry groupadd[12616]: new group: name=elasticsearch, GID=988
+Dec 19 17:30:03 rabid-industry groupadd[12957]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:30:03 rabid-industry groupadd[12957]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:30:03 rabid-industry groupadd[12957]: new group: name=elasticsearch, GID=988
+Dec 19 17:33:01 rabid-industry groupadd[13124]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:33:01 rabid-industry groupadd[13124]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:33:01 rabid-industry groupadd[13124]: new group: name=elasticsearch, GID=988
+Dec 19 17:38:38 rabid-industry groupadd[13322]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:38:38 rabid-industry groupadd[13322]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:38:38 rabid-industry groupadd[13322]: new group: name=elasticsearch, GID=988
+Dec 19 17:41:30 rabid-industry groupadd[13541]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:41:30 rabid-industry groupadd[13541]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:41:30 rabid-industry groupadd[13541]: new group: name=elasticsearch, GID=988
+Dec 19 17:43:49 rabid-industry groupadd[13760]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:43:49 rabid-industry groupadd[13760]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:43:49 rabid-industry groupadd[13760]: new group: name=elasticsearch, GID=988
+Dec 19 17:54:09 rabid-industry groupadd[14577]: group added to /etc/group: name=kibana, GID=987
+Dec 19 17:54:09 rabid-industry groupadd[14577]: group added to /etc/gshadow: name=kibana
+Dec 19 17:54:09 rabid-industry groupadd[14577]: new group: name=kibana, GID=987
+Dec 21 18:53:55 rabid-industry groupadd[44926]: group added to /etc/group: name=polkitd, GID=986
+Dec 21 18:53:55 rabid-industry groupadd[44926]: group added to /etc/gshadow: name=polkitd
+Dec 21 18:53:55 rabid-industry groupadd[44926]: new group: name=polkitd, GID=986
+Dec 21 18:53:57 rabid-industry groupadd[44958]: group added to /etc/group: name=rtkit, GID=172
+Dec 21 18:53:57 rabid-industry groupadd[44958]: group added to /etc/gshadow: name=rtkit
+Dec 21 18:53:57 rabid-industry groupadd[44958]: new group: name=rtkit, GID=172
+Dec 21 18:54:09 rabid-industry groupadd[44997]: group added to /etc/group: name=pipewire, GID=985
+Dec 21 18:54:09 rabid-industry groupadd[44997]: group added to /etc/gshadow: name=pipewire
+Dec 21 18:54:09 rabid-industry groupadd[44997]: new group: name=pipewire, GID=985
+Dec 21 18:54:10 rabid-industry groupadd[45019]: group added to /etc/group: name=geoclue, GID=984
+Dec 21 18:54:10 rabid-industry groupadd[45019]: group added to /etc/gshadow: name=geoclue
+Dec 21 18:54:10 rabid-industry groupadd[45019]: new group: name=geoclue, GID=984
+Dec 21 18:54:10 rabid-industry groupadd[45045]: group added to /etc/group: name=flatpak, GID=983
+Dec 21 18:54:10 rabid-industry groupadd[45045]: group added to /etc/gshadow: name=flatpak
+Dec 21 18:54:10 rabid-industry groupadd[45045]: new group: name=flatpak, GID=983
+Jul  1 01:19:26 almalinux9 groupadd[1263]: group added to /etc/group: name=slocate, GID=21
+Jul  1 01:19:26 almalinux9 groupadd[1263]: group added to /etc/gshadow: name=slocate
+Jul  1 01:19:26 almalinux9 groupadd[1263]: new group: name=slocate, GID=21
+Dec 18 17:57:31 rabid-industry groupadd[814]: group added to /etc/group: name=apache, GID=48
+Dec 18 17:57:31 rabid-industry groupadd[814]: group added to /etc/gshadow: name=apache
+Dec 18 17:57:31 rabid-industry groupadd[814]: new group: name=apache, GID=48
+Dec 19 12:37:42 rabid-industry groupadd[6287]: group added to /etc/group: name=elasticsearch, GID=991
+Dec 19 12:37:42 rabid-industry groupadd[6287]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 12:37:42 rabid-industry groupadd[6287]: new group: name=elasticsearch, GID=991
+Dec 19 12:56:54 rabid-industry groupadd[7078]: group added to /etc/group: name=kibana, GID=990
+Dec 19 12:56:54 rabid-industry groupadd[7078]: group added to /etc/gshadow: name=kibana
+Dec 19 12:56:54 rabid-industry groupadd[7078]: new group: name=kibana, GID=990
+Dec 19 16:02:35 rabid-industry groupadd[8778]: group added to /etc/group: name=logstash, GID=989
+Dec 19 16:02:35 rabid-industry groupadd[8778]: group added to /etc/gshadow: name=logstash
+Dec 19 16:02:35 rabid-industry groupadd[8778]: new group: name=logstash, GID=989
+Dec 19 17:25:24 rabid-industry groupadd[12616]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:25:24 rabid-industry groupadd[12616]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:25:24 rabid-industry groupadd[12616]: new group: name=elasticsearch, GID=988
+Dec 19 17:30:03 rabid-industry groupadd[12957]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:30:03 rabid-industry groupadd[12957]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:30:03 rabid-industry groupadd[12957]: new group: name=elasticsearch, GID=988
+Dec 19 17:33:01 rabid-industry groupadd[13124]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:33:01 rabid-industry groupadd[13124]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:33:01 rabid-industry groupadd[13124]: new group: name=elasticsearch, GID=988
+Dec 19 17:38:38 rabid-industry groupadd[13322]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:38:38 rabid-industry groupadd[13322]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:38:38 rabid-industry groupadd[13322]: new group: name=elasticsearch, GID=988
+Dec 19 17:41:30 rabid-industry groupadd[13541]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:41:30 rabid-industry groupadd[13541]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:41:30 rabid-industry groupadd[13541]: new group: name=elasticsearch, GID=988
+Dec 19 17:43:49 rabid-industry groupadd[13760]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:43:49 rabid-industry groupadd[13760]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:43:49 rabid-industry groupadd[13760]: new group: name=elasticsearch, GID=988
+Dec 19 17:54:09 rabid-industry groupadd[14577]: group added to /etc/group: name=kibana, GID=987
+Dec 19 17:54:09 rabid-industry groupadd[14577]: group added to /etc/gshadow: name=kibana
+Dec 19 17:54:09 rabid-industry groupadd[14577]: new group: name=kibana, GID=987
+Dec 21 18:53:55 rabid-industry groupadd[44926]: group added to /etc/group: name=polkitd, GID=986
+Dec 21 18:53:55 rabid-industry groupadd[44926]: group added to /etc/gshadow: name=polkitd
+Dec 21 18:53:55 rabid-industry groupadd[44926]: new group: name=polkitd, GID=986
+Dec 21 18:53:57 rabid-industry groupadd[44958]: group added to /etc/group: name=rtkit, GID=172
+Dec 21 18:53:57 rabid-industry groupadd[44958]: group added to /etc/gshadow: name=rtkit
+Dec 21 18:53:57 rabid-industry groupadd[44958]: new group: name=rtkit, GID=172
+Dec 21 18:54:09 rabid-industry groupadd[44997]: group added to /etc/group: name=pipewire, GID=985
+Dec 21 18:54:09 rabid-industry groupadd[44997]: group added to /etc/gshadow: name=pipewire
+Dec 21 18:54:09 rabid-industry groupadd[44997]: new group: name=pipewire, GID=985
+Dec 21 18:54:10 rabid-industry groupadd[45019]: group added to /etc/group: name=geoclue, GID=984
+Dec 21 18:54:10 rabid-industry groupadd[45019]: group added to /etc/gshadow: name=geoclue
+Dec 21 18:54:10 rabid-industry groupadd[45019]: new group: name=geoclue, GID=984
+Dec 21 18:54:10 rabid-industry groupadd[45045]: group added to /etc/group: name=flatpak, GID=983
+Dec 21 18:54:10 rabid-industry groupadd[45045]: group added to /etc/gshadow: name=flatpak
+Dec 21 18:54:10 rabid-industry groupadd[45045]: new group: name=flatpak, GID=983
+Jul  1 01:19:26 almalinux9 groupadd[1263]: group added to /etc/group: name=slocate, GID=21
+Jul  1 01:19:26 almalinux9 groupadd[1263]: group added to /etc/gshadow: name=slocate
+Jul  1 01:19:26 almalinux9 groupadd[1263]: new group: name=slocate, GID=21
+Dec 18 17:57:31 rabid-industry groupadd[814]: group added to /etc/group: name=apache, GID=48
+Dec 18 17:57:31 rabid-industry groupadd[814]: group added to /etc/gshadow: name=apache
+Dec 18 17:57:31 rabid-industry groupadd[814]: new group: name=apache, GID=48
+Dec 19 12:37:42 rabid-industry groupadd[6287]: group added to /etc/group: name=elasticsearch, GID=991
+Dec 19 12:37:42 rabid-industry groupadd[6287]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 12:37:42 rabid-industry groupadd[6287]: new group: name=elasticsearch, GID=991
+Dec 19 12:56:54 rabid-industry groupadd[7078]: group added to /etc/group: name=kibana, GID=990
+Dec 19 12:56:54 rabid-industry groupadd[7078]: group added to /etc/gshadow: name=kibana
+Dec 19 12:56:54 rabid-industry groupadd[7078]: new group: name=kibana, GID=990
+Dec 19 16:02:35 rabid-industry groupadd[8778]: group added to /etc/group: name=logstash, GID=989
+Dec 19 16:02:35 rabid-industry groupadd[8778]: group added to /etc/gshadow: name=logstash
+Dec 19 16:02:35 rabid-industry groupadd[8778]: new group: name=logstash, GID=989
+Dec 19 17:25:24 rabid-industry groupadd[12616]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:25:24 rabid-industry groupadd[12616]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:25:24 rabid-industry groupadd[12616]: new group: name=elasticsearch, GID=988
+Dec 19 17:30:03 rabid-industry groupadd[12957]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:30:03 rabid-industry groupadd[12957]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:30:03 rabid-industry groupadd[12957]: new group: name=elasticsearch, GID=988
+Dec 19 17:33:01 rabid-industry groupadd[13124]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:33:01 rabid-industry groupadd[13124]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:33:01 rabid-industry groupadd[13124]: new group: name=elasticsearch, GID=988
+Dec 19 17:38:38 rabid-industry groupadd[13322]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:38:38 rabid-industry groupadd[13322]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:38:38 rabid-industry groupadd[13322]: new group: name=elasticsearch, GID=988
+Dec 19 17:41:30 rabid-industry groupadd[13541]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:41:30 rabid-industry groupadd[13541]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:41:30 rabid-industry groupadd[13541]: new group: name=elasticsearch, GID=988
+Dec 19 17:43:49 rabid-industry groupadd[13760]: group added to /etc/group: name=elasticsearch, GID=988
+Dec 19 17:43:49 rabid-industry groupadd[13760]: group added to /etc/gshadow: name=elasticsearch
+Dec 19 17:43:49 rabid-industry groupadd[13760]: new group: name=elasticsearch, GID=988
+Dec 19 17:54:09 rabid-industry groupadd[14577]: group added to /etc/group: name=kibana, GID=987
+Dec 19 17:54:09 rabid-industry groupadd[14577]: group added to /etc/gshadow: name=kibana
+Dec 19 17:54:09 rabid-industry groupadd[14577]: new group: name=kibana, GID=987
+Dec 21 18:53:55 rabid-industry groupadd[44926]: group added to /etc/group: name=polkitd, GID=986
+Dec 21 18:53:55 rabid-industry groupadd[44926]: group added to /etc/gshadow: name=polkitd
+Dec 21 18:53:55 rabid-industry groupadd[44926]: new group: name=polkitd, GID=986
+Dec 21 18:53:57 rabid-industry groupadd[44958]: group added to /etc/group: name=rtkit, GID=172
+Dec 21 18:53:57 rabid-industry groupadd[44958]: group added to /etc/gshadow: name=rtkit
+Dec 21 18:53:57 rabid-industry groupadd[44958]: new group: name=rtkit, GID=172
+Dec 21 18:54:09 rabid-industry groupadd[44997]: group added to /etc/group: name=pipewire, GID=985
+Dec 21 18:54:09 rabid-industry groupadd[44997]: group added to /etc/gshadow: name=pipewire
+Dec 21 18:54:09 rabid-industry groupadd[44997]: new group: name=pipewire, GID=985
+Dec 21 18:54:10 rabid-industry groupadd[45019]: group added to /etc/group: name=geoclue, GID=984
+Dec 21 18:54:10 rabid-industry groupadd[45019]: group added to /etc/gshadow: name=geoclue
+Dec 21 18:54:10 rabid-industry groupadd[45019]: new group: name=geoclue, GID=984
+Dec 21 18:54:10 rabid-industry groupadd[45045]: group added to /etc/group: name=flatpak, GID=983
+Dec 21 18:54:10 rabid-industry groupadd[45045]: group added to /etc/gshadow: name=flatpak
+Dec 21 18:54:10 rabid-industry groupadd[45045]: new group: name=flatpak, GID=983
